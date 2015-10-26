@@ -1,0 +1,12 @@
+[user]
+	name = Alex Addy
+	email = alex.addy@visionistinc.com
+[core]
+	editor = vim
+[color]
+	ui = true
+[push]
+	default = simple
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	ss = stash save -u
