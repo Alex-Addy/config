@@ -511,7 +511,11 @@ __git_ps1 ()
 	b=${b##refs/heads/}
 	if [ $pcmode = yes ] && [ $ps1_expanded = yes ]; then
 		__git_ps1_branch_name=$b
-		b="\${__git_ps1_branch_name}"
+		if [ ${#__git_ps1_branch_name} -lt 30 ]; then
+			b="\${__git_ps1_branch_name}"
+		else
+			b="\${__git_ps1_branch_name:0:29}..."
+		fi
 	fi
 
 	local f="$w$i$s$u"

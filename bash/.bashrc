@@ -122,8 +122,9 @@ fi
 alias st='cd ~/godev/src/dev.visionistinc.com/streamtap'
 
 # add go environment variables
-export GOPATH=~/godev
+export GOPATH=/extra/aladdy
 export GOROOT=/usr/local/go
+export GO15VENDOREXPERIMENT=1
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # enable programmable completion features (you don't need to enable
