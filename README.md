@@ -1,3 +1,5 @@
+Just to be clear the below is copied from somewhere else and is not my writing. I will rewrite what I need someday...
+
 
 Using GNU Stow to manage your dotfiles
 
